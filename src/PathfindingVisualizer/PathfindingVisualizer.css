@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+:root{
+    --darkBlue:rgb(0, 87, 109);
+    --darkerBlue:rgb(0, 56, 70);
+}
+body{
+    padding: 0;
+    margin:0;
+}
+.header{
+    width: 100%;
+    height:50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--darkBlue);
+}
+.logo{
+    padding:15px 10px;
+    font-size: 18px;
+    vertical-align: middle;
+    color:white;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+.grid {
+    margin:25px 8px;
+    outline: 1px solid rgb(175, 216, 248); 
+    text-align: center; 
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn ,.clear-walls,.clear-path{
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 30px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0 ;
+    transition: 0.3s ease-in;
+  }
+  
+ header a:hover, .dropdown:hover .dropbtn,.clear-walls:hover,.clear-path:hover {
+    background-color: var(--darkerBlue);
+   
+  }
+  
+ .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--darkBlue);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content button {
+  float: none;
+  color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border:none;
+  width:100%;
+  height:45px;
+  background-color: var(--darkBlue);
+  font-size: 15px;
+  transition: 0.3s ease-in;
+}
+
+.dropdown-content button:hover {
+  background-color: var(--darkerBlue);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+i{
+    margin:0 5px;
+}
+.current-node{
+  background-color: rgb(255, 255, 47);
+}

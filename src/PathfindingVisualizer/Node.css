@@ -1,0 +1,122 @@
+  
+.node {
+    width: 30px;
+    height: 30px;
+    outline: 1px solid rgb(175, 216, 248); 
+
+    display: inline-block;
+    vertical-align: top;
+    
+  }
+
+.start-node{
+  /* background-color: lime; */
+  background-image: url(https://static.thenounproject.com/png/1677182-200.png);
+  background-size: 21px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: opacity 0.3s ease-in;
+}
+.finish-node{
+  /* background-color: blue; */
+  background-image: url(https://image.flaticon.com/icons/png/512/67/67872.png);
+  /* background-position-x: center; */
+  background-size: 24px;
+  background-position: center center;
+  background-repeat:no-repeat ;
+  /* outline:none; */
+  animation: opacity 0.3s ease-in;
+}
+.wall-node{
+  background-color: rgb(12, 53, 71);
+  outline:none;
+  animation: wall-animation 0.3s ease-in;
+}
+.weight-node{
+  background-image: url(https://raw.githubusercontent.com/clementmihailescu/Pathfinding-Visualizer/c51f2d5fd3386b485694581ca0f324cf343f39b1/public/styling/weight.svg);
+  background-size: 22px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: opacity 0.3s ease-in;
+ 
+}
+.visited{
+  outline-color:white;
+  background-color: rgb(83, 244, 255);
+  animation: visited-nodes-animation 0.5s ease-out;
+}
+
+
+.node-shortest-path {
+    background-color:  rgb(255, 254, 106);
+    outline:none;
+    animation: shortest-path-animation 0.8s ease-out;
+}
+
+
+@keyframes wall-animation{
+  0%{
+    background-color: #fff;
+    outline: 1px solid rgb(175, 216, 248); 
+    
+  }
+  100%{
+    background-color: rgb(9, 41, 54);
+    outline:none;
+   
+  }
+}
+@keyframes weight-animation{
+  0%{
+    background-color: #fff;
+    outline: 1px solid rgb(175, 216, 248); 
+    
+  }
+  100%{
+    background-color:rgb(226, 226, 88);
+    outline:none;
+   
+  }
+}
+@keyframes visited-nodes-animation{
+  0%{
+    background-color: rgb(170, 249, 255);
+    transform: scale(0.3);
+    border-radius: 100%;
+    outline:none;
+  }
+  60%{
+    background-color: rgb(0, 231, 200);
+    transform: scale(1.15);
+    border-radius: 0;
+    outline:none;
+  }
+   100%{
+    background-color: rgb(27, 238, 253);
+    transform: scale(1);
+    border-radius: 0;
+     outline: 1px solid white;  
+  } 
+}
+@keyframes shortest-path-animation{
+  0%{
+    transform: scale(0.8);
+    /* outline: 1px solid white;  */
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+    /* outline:none; */
+  }
+}
+@keyframes opacity{
+  0%{
+    opacity:0.3;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
